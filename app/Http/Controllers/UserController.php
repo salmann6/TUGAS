@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+<<<<<<< HEAD
 use App\Models\User; // Pastikan model User sudah ada
 
 class UserController extends Controller
@@ -38,4 +39,32 @@ class UserController extends Controller
     // public function index() { ... }
     // public function edit($id) { ... }
     // public function update(Request $request, $id) { ... }
+=======
+
+class UserController extends Controller
+{
+    // Fungsi untuk menampilkan form
+    public function showForm()
+    {
+        return view('user.index'); // Menampilkan form input
+    }
+    
+    // Fungsi untuk menangani data yang dikirimkan dari form
+    public function store(Request $request)
+    {
+        // Validasi data
+        $validated = $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|email',
+            'phone' => 'required|numeric',
+            'message' => 'required|string',
+        ]);
+
+        // Jika data valid, kita akan mengembalikan response
+        return response()->json([
+            'message' => 'Data berhasil dikirim!',
+            'data' => $validated // Menampilkan data yang valid
+        ]);
+    }
+>>>>>>> 44fbb87 (BLADE TAMPLATE)
 }

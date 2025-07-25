@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <html lang="en">
 
     <head>
@@ -46,3 +47,21 @@
     </body>
 
 </html>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Daftar Produk</title>
+</head>
+<body>
+    <h1>Daftar Produk</h1>
+    <ul>
+        @foreach ($products as $product)
+            <li>
+                <a href="/product/{{ $product['id'] }}">{{ $product['name'] }} - Rp{{ $product['price'] }}</a>
+            </li>
+        @endforeach
+    </ul>
+</body>
+</html>
+>>>>>>> 44fbb87 (BLADE TAMPLATE)

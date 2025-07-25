@@ -1,4 +1,8 @@
 {
+<<<<<<< HEAD
+=======
+    "$schema": "https://json.schemastore.org/package.json",
+>>>>>>> 44fbb87 (BLADE TAMPLATE)
     "private": true,
     "type": "module",
     "scripts": {
@@ -6,11 +10,19 @@
         "dev": "vite"
     },
     "devDependencies": {
+<<<<<<< HEAD
         "@tailwindcss/vite": "^4.1.7",
         "axios": "^1.8.2",
         "concurrently": "^9.0.1",
         "laravel-vite-plugin": "^1.2.0",
         "tailwindcss": "^4.1.7",
+=======
+        "@tailwindcss/vite": "^4.0.0",
+        "axios": "^1.8.2",
+        "concurrently": "^9.0.1",
+        "laravel-vite-plugin": "^1.2.0",
+        "tailwindcss": "^4.0.0",
+>>>>>>> 44fbb87 (BLADE TAMPLATE)
         "vite": "^6.2.4"
     }
 }
