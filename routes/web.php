@@ -47,3 +47,6 @@ Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
 >>>>>>> 44fbb87 (BLADE TAMPLATE)
+
+Route::get('/home', function () {
+    return view('home');

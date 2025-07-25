@@ -1,11 +1,10 @@
-<!-- resources/views/partials/header.blade.php -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-        <a class="navbar-brand" href="#">MyApp</a>
-        <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="{{ url('/home') }}">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="{{ url('/about') }}">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="{{ url('/contact') }}">Contact</a></li>
-        </ul>
+<header class="bg-green-700 text-white shadow-md">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <a href="/" class="font-bold text-xl">SampahJadiUang</a>
+        <nav class="space-x-4">
+            <a href="/home" class="hover:text-green-200">Home</a>
+            <a href="/about" class="hover:text-green-200">About</a>
+            <a href="/contact" class="hover:text-green-200">Contact</a>
+        </nav>
     </div>
-</nav>
+</header>
